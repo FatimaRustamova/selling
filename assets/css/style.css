@@ -1,0 +1,437 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 32px;
+  margin: auto;
+}
+
+header {
+  width: 100%;
+  padding: 20px 0;
+  background-color: rgb(248, 249, 250);
+}
+header .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .head .icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .head .icons .i {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .head .icons .i i {
+  color: white;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+header .head .icons .i i:hover {
+  color: rgb(241, 104, 18);
+  cursor: pointer;
+}
+header .head .text {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+header .head .text .text1 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+header .head .text .text1 i {
+  color: rgb(241, 104, 18);
+}
+header .head .text .text1 p {
+  font-family: "Mulish", sans-serif;
+  font-size: 15px;
+}
+
+nav {
+  width: 100%;
+  padding: 25px 0;
+}
+nav .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .navbar h2 {
+  font-size: 40px;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+}
+nav .navbar h2 span {
+  color: rgb(241, 104, 18);
+}
+nav .navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+nav .navbar ul li {
+  list-style-type: none;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+}
+nav .navbar ul li a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s ease;
+}
+nav .navbar ul li a:hover {
+  color: rgb(241, 104, 18);
+}
+nav .navbar i {
+  display: none;
+  font-size: 40px;
+}
+
+.sect1 {
+  width: 100%;
+  padding: 120px 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/hero_2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+}
+.sect1 .shop {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.sect1 .shop h1 {
+  color: white;
+  font-size: 80px;
+  font-family: "Mulish", sans-serif;
+  font-weight: bolder;
+}
+.sect1 .shop p {
+  color: white;
+  font-size: 18px;
+  font-family: "Mulish", sans-serif;
+  line-height: 1.6;
+}
+.sect1 .shop .club {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+.sect1 .shop .club #btn1 {
+  width: 160px;
+  height: 55px;
+  background: none;
+  border: 2px solid white;
+  transition: all 0.5s ease;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-family: 18px;
+}
+.sect1 .shop .club #btn1:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.sect1 .shop .club #btn2 {
+  width: 200px;
+  height: 55px;
+  background-color: white;
+  border: 2px solid white;
+  transition: all 0.5s ease;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-family: 18px;
+}
+.sect1 .shop .club #btn2:hover {
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+
+.sect2 {
+  width: 100%;
+  padding: 80px 0;
+}
+.sect2 .product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sect2 .product .popular {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.sect2 .product .popular h3 {
+  font-family: "Mulish", sans-serif;
+  color: rgb(173, 183, 191);
+  font-size: 15px;
+}
+.sect2 .product .popular h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 35px;
+}
+.sect2 .product .popular p {
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+.sect2 .selling {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sect2 .selling .wild {
+  width: 32%;
+  margin-top: 50px;
+}
+.sect2 .selling .wild .image {
+  width: 100%;
+}
+.sect2 .selling .wild .image img {
+  width: 100%;
+}
+.sect2 .selling .wild .west {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.sect2 .selling .wild .west h2 {
+  font-family: "Mulish", sans-serif;
+  font-size: 17px;
+}
+.sect2 .selling .wild .west p {
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+.sect2 .selling .wild .west button {
+  width: 150px;
+  height: 40px;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  border: 2px solid teal;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.add {
+  width: 100%;
+  background-color: bisque;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.add form {
+  width: 420px;
+  padding: 30px;
+  background-color: rgb(115, 157, 158);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.add form label {
+  font-family: "Mulish", sans-serif;
+  font-size: 18px;
+  margin-top: 5px;
+}
+.add form img {
+  width: 50%;
+  margin-left: 50px;
+}
+.add form input[type=text] {
+  width: 100%;
+  height: 45px;
+  padding-left: 15px;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  border: 2px solid teal;
+  outline: none;
+}
+.add form input[type=file]::file-selector-button {
+  width: 140px;
+  height: 45px;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  border: 2px solid teal;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.add form input[type=submit] {
+  width: 140px;
+  height: 45px;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  border: 2px solid teal;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+  margin-left: 100px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.add table {
+  width: 90%;
+  border: 2px solid teal;
+  border-collapse: collapse;
+}
+.add table tr {
+  border: 2px solid teal;
+}
+.add table tr th {
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  color: brown;
+  border-right: 2px solid teal;
+  padding: 10px 0;
+}
+.add table tr td {
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  color: brown;
+  border-right: 2px solid teal;
+  padding: 10px 0;
+  text-align: center;
+}
+.add table tr td button {
+  width: 100px;
+  height: 40px;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  border: 2px solid teal;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.details {
+  width: 100%;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.details .wild {
+  width: 32%;
+  margin-top: 50px;
+  border: 2px solid teal;
+}
+.details .wild .image {
+  width: 100%;
+}
+.details .wild .image img {
+  width: 100%;
+}
+.details .wild .west {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.details .wild .west h2 {
+  font-family: "Mulish", sans-serif;
+  font-size: 17px;
+}
+.details .wild .west p {
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+@media screen and (max-width: 990px) {
+  .container {
+    max-width: 800px;
+  }
+  header .head .text .text1 p {
+    display: none;
+  }
+  nav .navbar ul {
+    display: none;
+  }
+  nav .navbar i {
+    display: block;
+  }
+  .sect1 .shop {
+    width: 60%;
+  }
+  .sect1 .shop h1 {
+    font-size: 40px;
+  }
+  .sect1 .shop .club {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 600px;
+  }
+  .sect1 .shop {
+    width: 100%;
+  }
+  .sect1 .shop h1 {
+    font-size: 35px;
+  }
+  .sect1 .shop .club {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 1200px;
+  }
+  .sect1 .shop {
+    width: 100%;
+  }
+  .sect1 .shop .club {
+    flex-direction: column;
+  }
+  .sect1 .shop .club #btn1 {
+    width: 100%;
+  }
+  .sect1 .shop .club #btn2 {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

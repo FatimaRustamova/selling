@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 32px;
+    margin: auto;
+}
+
+header{
+    width: 100%;
+    padding: 20px 0;
+    background-color: $color4;
+    .head{
+        @include flex;
+        .icons{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .i{
+                width: 30px;
+                height: 30px;
+                background-color: $color1;
+                border-radius: 100%;
+                @include center;
+                i{
+                    color: $color2;
+                    font-size: 15px;
+                    transition: all .5s ease;
+                    &:hover{
+                        color: $color3;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .text{
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            .text1{
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                i{
+                    color: $color3;
+                }
+                p{
+                    font-family: $font-family1;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+nav{
+    width: 100%;
+    padding: 25px 0;
+    .navbar{
+        @include flex;
+        h2{
+            font-size: 40px;
+            font-family: $font-family2 ;
+            cursor: pointer;
+            span{
+                color: $color3;
+            }
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            gap: 45px;
+            li{
+                list-style-type: none;
+                font-family: $font-family1;
+                font-size: 16px;
+                a{
+                    text-decoration: none;
+                    color: $color1;
+                    transition: all .5s ease;
+                    &:hover{
+                        color: $color3;
+                    }
+                }
+            }
+        }
+        i{
+            display: none;
+            font-size: 40px;
+        }
+    }
+}
+
+.sect1{
+    width: 100%;
+    padding: 120px 0;
+    background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../images/hero_2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    .shop{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        h1{
+            color: $color2;
+            font-size: 80px;
+            font-family: $font-family1;
+            font-weight: bolder;
+        }
+        p{
+            color: $color2;
+            font-size: 18px;
+            font-family: $font-family1;
+            line-height: 1.6;
+        }
+        .club{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-top: 20px;
+            #btn1{
+                width: 160px;
+                height: 55px;
+                background: none;
+                border: 2px solid $color2;
+                transition: all .5s ease;
+                color: $color2;
+                font-family: $font-family2;
+                font-family: 18px;
+                &:hover{
+                    background-color: $color2;
+                    color: $color1;
+                    cursor: pointer;
+                }
+            }
+            #btn2{
+                width: 200px;
+                height: 55px;
+                background-color: $color2;
+                border: 2px solid $color2;
+                transition: all .5s ease;
+                color: $color1;
+                font-family: $font-family2;
+                font-family: 18px;
+                &:hover{
+                    background: none;
+                    color: $color2;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.sect2{
+    width: 100%;
+    padding: 80px 0;
+    .product{
+        @include center;
+        .popular{
+            width: 40%;
+            @include center;
+            flex-direction: column;
+            gap: 10px;
+            h3{
+                font-family: $font-family1;
+                color: $color5;
+                font-size: 15px;
+            }
+            h2{
+                font-family: $font-family2;
+                font-size: 35px;
+            }
+            p{
+                font-family: $font-family1;
+                font-size: 16px;
+                line-height: 1.6;
+                text-align: center;
+
+            }
+        }
+    }
+    .selling{
+        @include flex;
+        flex-wrap: wrap;
+        .wild{
+            width: 32%;
+            margin-top: 50px;
+            .image{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+            .west{
+                width: 100%;
+                padding: 10px 0;
+                @include center;
+                flex-direction: column;
+                gap: 10px;
+                h2{
+                    font-family: $font-family1;
+                    font-size: 17px;
+                }
+                p{
+                    font-family: $font-family1;
+                    font-size: 16px;
+                    line-height: 1.6;
+                    text-align: center;
+                }
+                button{
+                    width: 150px;
+                    height: 40px;
+                    font-family: $font-family1;
+                    font-size: 16px;
+                    border: 2px solid teal;
+                    background-color: teal;
+                    color: $color2;
+                    cursor: pointer;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+.add{
+    width: 100%;
+    background-color: bisque;
+    padding: 50px 0;
+    @include center;
+    flex-direction: column;
+    gap: 50px;
+    form{
+        width: 420px;
+        padding: 30px;
+        background-color: rgb(115, 157, 158);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        label{
+            font-family: $font-family1;
+            font-size: 18px;
+            margin-top: 5px;
+        }
+        img{
+            width: 50%;
+            margin-left: 50px;
+        }
+        input[type=text]{
+            width: 100%;
+            height: 45px;
+            padding-left: 15px;
+            font-family: $font-family1;
+            font-size: 16px;
+            border: 2px solid teal;
+            outline: none;
+        }
+        input[type=file]::file-selector-button{
+            width: 140px;
+            height: 45px;
+            font-family: $font-family1;
+            font-size: 16px;
+            border: 2px solid teal;
+            background-color: teal;
+            color: $color2;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type=submit]{
+            width: 140px;
+            height: 45px;
+            font-family: $font-family1;
+            font-size: 16px;
+            border: 2px solid teal;
+            background-color: teal;
+            color: $color2;
+            cursor: pointer;
+            margin-left: 100px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+    }
+    table{
+        width: 90%;
+        border: 2px solid teal;
+        border-collapse: collapse;
+        tr{
+            border: 2px solid teal;
+            th{
+                font-family: $font-family1;
+                font-size: 16px;
+                color: brown;
+                border-right: 2px solid teal;
+                padding: 10px 0;
+            }
+            td{
+                font-family: $font-family1;
+                font-size: 16px;
+                color: brown;
+                border-right: 2px solid teal;
+                padding: 10px 0;
+                text-align: center;
+                button{
+                    width: 100px;
+                    height: 40px;
+                    font-family: $font-family1;
+                    font-size: 16px;
+                    border: 2px solid teal;
+                    background-color: teal;
+                    color: $color2;
+                    cursor: pointer;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+    }
+}
+
+.details{
+    width: 100%;
+    padding: 30px 0;
+    @include center;
+    .wild{
+        width: 32%;
+        margin-top: 50px;
+        border: 2px solid teal;
+        .image{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        .west{
+            width: 100%;
+            padding: 10px 0;
+            @include center;
+            flex-direction: column;
+            gap: 10px;
+            h2{
+                font-family: $font-family1;
+                font-size: 17px;
+            }
+            p{
+                font-family: $font-family1;
+                font-size: 16px;
+                line-height: 1.6;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:990px) {
+    .container{
+        max-width: 800px;
+    }
+    header{
+        .head{
+            .text{
+                .text1{
+                    p{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    nav{
+        .navbar{
+            ul{
+                display: none;
+            }
+            i{
+                display: block;
+            }
+        }
+    }
+    .sect1{
+        .shop{
+            width: 60%;
+            h1{
+                font-size: 40px;
+            }
+            .club{
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container{
+        max-width: 600px;
+    }
+    .sect1{
+        .shop{
+            width: 100%;
+            h1{
+                font-size: 35px;
+            }
+            .club{
+                flex-direction: row;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .container{
+        max-width: 1200px;
+    }
+    .sect1{
+        .shop{
+            width: 100%;
+            .club{
+                flex-direction: column;
+                #btn1{
+                    width: 100%;
+                }
+                #btn2{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

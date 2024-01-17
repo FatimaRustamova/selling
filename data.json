@@ -1,0 +1,40 @@
+{
+    "Selling": [
+        {
+            "id": 1,
+            "image": "./assets/images/model_1_bg.jpg",
+            "name": "Wild West Hoodie",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing."
+        },
+        {
+            "id": 2,
+            "image": "./assets/images/model_2_bg.jpg",
+            "name": "Wild West Hoodie",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing."
+        },
+        {
+            "id": 3,
+            "image": "./assets/images/model_3_bg.jpg",
+            "name": "Wild West Hoodie",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing."
+        },
+        {
+            "id": 4,
+            "image": "./assets/images/model_4_bg.jpg",
+            "name": "Wild West Hoodie",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing."
+        }, 
+        {
+            "id": 5,
+            "image": "./assets/images/model_5_bg.jpg",
+            "name": "Wild West Hoodie",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing."
+        },
+        {
+            "id": 6,
+            "image": "./assets/images/product_1_bg.jpg",
+            "name": "Wild West Hoodie",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing."
+        }
+    ]
+}
