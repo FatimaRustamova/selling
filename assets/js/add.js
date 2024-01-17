@@ -18,12 +18,13 @@ fetch("http://localhost:3000/Selling")
                 <td>
                     <button onclick="deleteEl(${element.id})">Delete</button>
                 </td>
+                <td>
+                    <button onclick="updateEl(${element.id})">Update</button>
+                </td>
             </tr>
         `
     })
 })
-
-
 
 file.addEventListener("input", (e)=> {
     let file = e.target.files[0];
@@ -38,26 +39,35 @@ file.addEventListener("input", (e)=> {
 
 form.addEventListener("submit", (event)=>{
     event.preventDefault();
-    let obj = {};
-    let reader = new FileReader();
-    let src = file.files[0];
-    reader.onload = (e)=> {
-        obj = {
-            image: e.target.result,
-            name: name.value,
-            desc: desc.value
+    if(name.value && desc.value){
+        let obj = {};
+        let reader = new FileReader();
+        let src = file.files[0];
+        reader.onload = (e)=> {
+            obj = {
+                image: e.target.result,
+                name: name.value,
+                desc: desc.value
+            }
+            axios.post("http://localhost:3000/Selling", obj)
+            .then(res => {
+                window.location = "./index.html"
+            })
         }
-        axios.post("http://localhost:3000/Selling", obj)
-        .then(res => {
-            window.location = "./index.html"
-        })
+        reader.readAsDataURL(src);
     }
-    reader.readAsDataURL(src);
+    else{
+        alert("Butun xanalar doldurulmalidir!!")
+    }
 })
 
-
+// --Delete--
 function deleteEl(id) {
     axios.delete(`http://localhost:3000/Selling/${id}`);
     window.location.reload()
 }
 
+// --Update--
+function updateEl(id) {
+    window.location = `./update.html?id=${id}`
+}

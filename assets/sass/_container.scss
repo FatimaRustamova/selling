@@ -166,7 +166,7 @@ nav{
     .product{
         @include center;
         .popular{
-            width: 40%;
+            width: 45%;
             @include center;
             flex-direction: column;
             gap: 10px;
@@ -174,17 +174,48 @@ nav{
                 font-family: $font-family1;
                 color: $color5;
                 font-size: 15px;
+                text-align: center;
             }
             h2{
                 font-family: $font-family2;
                 font-size: 35px;
+                text-align: center;
             }
             p{
                 font-family: $font-family1;
                 font-size: 16px;
                 line-height: 1.6;
                 text-align: center;
-
+                color: $color6;
+            }
+        }
+    }
+    .input{
+        @include center;
+        margin-top: 50px;
+        gap: 20px;
+        input{
+            width: 350px;
+            height: 45px;
+            border: 2px solid $color1;
+            padding-left: 15px;
+            font-family: $font-family1;
+            font-size: 17px;
+        }
+        #sort{
+            width: 140px;
+            height: 45px;
+            background-color: $color1;
+            border: 2px solid $color1;
+            transition: all .5s ease;
+            color: $color2;
+            font-family: $font-family2;
+            font-family: 18px;
+            border-radius: 10px;
+            &:hover{
+                background: none;
+                color: $color1;
+                cursor: pointer;
             }
         }
     }
@@ -196,13 +227,19 @@ nav{
             margin-top: 50px;
             .image{
                 width: 100%;
+                transition: all .5s ease;
+                overflow: hidden;
                 img{
                     width: 100%;
+                    transition: all .5s ease;
+                    &:hover{
+                    scale: 1.1;
+                    }
                 }
             }
             .west{
                 width: 100%;
-                padding: 10px 0;
+                padding: 20px;
                 @include center;
                 flex-direction: column;
                 gap: 10px;
@@ -212,21 +249,302 @@ nav{
                 }
                 p{
                     font-family: $font-family1;
-                    font-size: 16px;
+                    font-size: 14px;
                     line-height: 1.6;
                     text-align: center;
+                    color: $color6;
                 }
                 button{
                     width: 150px;
-                    height: 40px;
-                    font-family: $font-family1;
-                    font-size: 16px;
-                    border: 2px solid teal;
-                    background-color: teal;
-                    color: $color2;
-                    cursor: pointer;
-                    border-radius: 5px;
+                    height: 45px;
+                    background: none;
+                    border: 2px solid $color1;
+                    transition: all .5s ease;
+                    color: $color1;
+                    font-family: $font-family2;
+                    font-family: 18px;
+                    text-transform: uppercase;
+                    margin-top: 20px;
+                        &:hover{
+                        background-color: $color1;
+                        color: $color2;
+                        cursor: pointer;
+                    }
                 }
+            }
+        }
+    }
+}
+
+.sect3{
+    width: 100%;
+    padding: 100px 0;
+    background-color: $color4;
+    .product{
+        @include center;
+        .popular{
+            width: 45%;
+            @include center;
+            flex-direction: column;
+            gap: 10px;
+            h3{
+                font-family: $font-family1;
+                color: $color5;
+                font-size: 15px;
+                text-align: center;
+            }
+            h2{
+                font-family: $font-family2;
+                font-size: 35px;
+                text-align: center;
+            }
+            p{
+                font-family: $font-family1;
+                font-size: 16px;
+                line-height: 1.6;
+                text-align: center;
+                color: $color6;
+            }
+        }
+    }
+    .about{
+        padding: 50px;
+        margin-top: 70px;
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+        background-color: $color2;
+        .left{
+            width: 45%;
+            img{
+                width: 100%;
+            }
+        }
+        .right{
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            h2{
+                font-family: $font-family1;
+                font-size: 25px;
+            }
+            p{
+                font-family: $font-family1;
+                font-size: 16px;
+                color: $color6;
+                line-height: 1.6;
+            }
+            h3{
+                font-family: $font-family1;
+                font-size: 20px;
+            }
+            .view{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                margin-top: 20px;
+                #view1{
+                    width: 140px;
+                    height: 40px;
+                    background: none;
+                    border: 2px solid $color1;
+                    transition: all .5s ease;
+                    color: $color1;
+                    font-family: $font-family2;
+                    font-family: 16px;
+                        &:hover{
+                        background-color: $color1;
+                        color: $color2;
+                        cursor: pointer;
+                    }
+                }
+                #view2{
+                    width: 140px;
+                    height: 40px;
+                    background-color: $color1;
+                    border: 2px solid $color1;
+                    transition: all .5s ease;
+                    color: $color2;
+                    font-family: $font-family2;
+                    font-family: 16px;
+                    &:hover{
+                        background: none;
+                        color: $color1;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }   
+    }
+}
+
+.sect4{
+    width: 100%;
+    padding: 80px 0;
+    .team{
+        @include center;
+        flex-direction: column;
+        p{
+            color: $color5;
+            font-family: $font-family1;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+        h2{
+            font-family: $font-family2;
+            font-size: 35px;
+        }
+    }
+    .nisi{
+        @include flex;
+        .founder{
+            width: 32%;
+            margin-top: 50px;
+            @include center;
+            flex-direction: column;
+            gap: 15px;
+            img{
+                width: 70%;
+            }
+            h3{
+                font-family: $font-family1;
+                font-size: 17px;
+                color: $color6;
+            }
+            span{
+                font-family: $font-family1;
+                font-size: 13px;
+                color: $color5;
+            }
+            p{
+                font-family: $font-family1;
+                font-size: 16px;
+                text-align: center;
+                color: $color6;
+                line-height: 1.6;
+            }
+            .circle{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                .f{
+                    width: 30px;
+                    height: 30px;
+                    background-color: $color6;
+                    border-radius: 100%;
+                    @include center;
+                    transition: all .5s ease;
+                    i{
+                        color: $color2;
+                        font-size: 14px;
+                    }
+                    &:hover{
+                        background-color: $color1;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sect5{
+    width: 100%;
+    padding: 100px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)) ,url("../images/hero_2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    .special{
+        @include center;
+        .summer{
+            width: 60%;
+            @include center;
+            flex-direction: column;
+            gap: 20px;
+            h3{
+                font-family: $font-family1;
+                color: $color5;
+                font-size: 15px;
+                text-align: center;
+            }
+            h2{
+                font-family: $font-family2;
+                font-size: 40px;
+                text-align: center;
+                color: $color2;
+            }
+            p{
+                font-family: $font-family1;
+                font-size: 20px;
+                line-height: 1.6;
+                text-align: center;
+                color: $color2;
+            }
+            .week{
+                width: 100%;
+                @include center;
+                flex-wrap: wrap;
+                gap: 20px;
+                .days{
+                    width: 85px;
+                    padding: 20px;
+                    @include center;
+                    flex-direction: column;
+                    border-radius: 10px;
+                    background-color: $color2;
+                    margin-top: 30px;
+                    h2{
+                        color: $color7;
+                        font-family: $font-family1;
+                    }
+                    p{
+                        color: $color6;
+                        font-family: $font-family1;
+                        font-size: 15px;
+                    }
+                }
+            }
+            button{
+                width: 180px;
+                height: 55px;
+                background: none;
+                border: 2px solid $color2;
+                transition: all .5s ease;
+                color: $color2;
+                font-family: $font-family2;
+                font-family: 20px;
+                margin-top: 30px;
+                text-transform: uppercase;
+                &:hover{
+                    background-color: $color2;
+                    color: $color1;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    padding: 40px 0;
+    background-color: $color4;
+    .copy{
+        @include center;
+        p{
+            font-family: $font-family1;
+            font-size: 16px;
+            color: $color6;
+            text-align: center;
+            a{
+                text-decoration: none;
+                color: $color5;
+            }
+            i{
+                color: $color6;
             }
         }
     }
@@ -399,6 +717,21 @@ nav{
             }
         }
     }
+    .sect2{
+        .selling{
+            .wild{
+                width: 47%;
+            }
+        }
+    }
+    .sect4{
+        .nisi{
+            flex-wrap: wrap;
+            .founder{
+                width: 47%;
+            }
+        }
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -413,6 +746,60 @@ nav{
             }
             .club{
                 flex-direction: row;
+            }
+        }
+    }
+    .sect2{
+        .product{
+            .popular{
+                width: 100%;
+            }
+        }
+        .selling{
+            flex-direction: column;
+            .wild{
+                width: 100%;
+            }
+        }
+    }
+    .sect3{
+        .product{
+            .popular{
+                width: 100%;
+            }
+        }
+        .about{
+            flex-direction: column;
+            .left{
+                width: 100%;
+            }
+            .right{
+                width: 100%;
+                .view{
+                    flex-direction: column;
+                    gap: 10px;
+                    #view1{
+                        width: 100%;
+                    }
+                    #view2{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .sect4{
+        .nisi{
+            flex-direction: column;
+            .founder{
+                width: 100%;
+            }
+        }
+    }
+    .sect5{
+        .special{
+            .summer{
+                width: 100%;
             }
         }
     }
@@ -432,6 +819,17 @@ nav{
                 }
                 #btn2{
                     width: 100%;
+                }
+            }
+        }
+    }
+    .sect4{
+        .nisi{
+            flex-direction: column;
+            .founder{
+                width: 100%;
+                img{
+                    width: 90%;
                 }
             }
         }
